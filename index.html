@@ -1,1 +1,25 @@
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6346ad46-a770-4b8d-8f46-90965ce2521f" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+<!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8" />
+        <title>Hello World</title>
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        
+        <!-- Don't use this in production: -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      </head>
+      <body>
+        <div id="root"></div>
+        <script type="text/babel">
+          function HelloWorld(props){
+            return <h1>{`Hello, world! ${props.name}`}</h1>;
+          }
+          ReactDOM.render(
+            <HelloWorld name="James"/>,
+            document.getElementById('root')
+          );
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6346ad46-a770-4b8d-8f46-90965ce2521f" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+        </script>
+      </body>
+    </html>
