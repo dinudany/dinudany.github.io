@@ -1,24 +1,15 @@
-<!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="UTF-8" />
-        <title>Hello World</title>
-        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-        
-        <!-- Don't use this in production: -->
-        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-      </head>
-      <body>
-        <div id="root"></div>
-        <script type="text/babel">
-          function HelloWorld(props){
-            return <h1>{`Hello, world! ${props.name}`}</h1>;
-          }
-          ReactDOM.render(
-            <HelloWorld name="dinudany"/>,
-            document.getElementById('root')
-          );
-        </script>
-      </body>
-    </html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Landbot | Convert a Landing Page into a Chatbot</title>
+  </head>
+  <body>
+    <script SameSite="None; Secure" src="https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js"></script>
+    <script>
+      var myLandbot = new LandbotFullpage({
+        index: 'https://chats.landbot.io/v2/H-704551-WO3KWW1253SMAGA8/index.html',
+      });
+    </script>
+  </body>
+</html>
